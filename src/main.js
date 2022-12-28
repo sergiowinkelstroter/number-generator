@@ -10,5 +10,9 @@ button.addEventListener("click", () => {
     result = "Valor invalido";
   }
 
+  if (min > max) {
+    result = "Valor invalido";
+  }
+
   document.querySelector("#result > span").textContent = result;
 });
